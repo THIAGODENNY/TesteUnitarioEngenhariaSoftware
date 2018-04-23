@@ -12,6 +12,12 @@ public class Cliente {
 	void Transfere(Cliente cliente, double valor){
 		cliente.saldo += valor;
 		this.saldo -= valor;		
+		
+		//falhar teste unitario
+		/*
+		cliente.saldo -= valor;
+		this.saldo += valor;	
+		 */
 	}
 	
 	double getSaldo(){
